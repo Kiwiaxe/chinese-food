@@ -1,5 +1,7 @@
 import createElement from '../../assets/lib/create-element.js';
 
+const crossIcon = require('../../assets/images/icons/cross-icon.svg');
+
 export default class Modal {
   constructor() {
     this.elem = this.render();
@@ -14,7 +16,7 @@ export default class Modal {
       <div class="modal__inner">
         <div class="modal__header">
           <button type="button" class="modal__close">
-            <img src="../../assets/images/icons/cross-icon.svg" alt="close-icon" />
+            <img src=${crossIcon} alt="close-icon" />
           </button>
 
 			<h3 class="modal__title"></h3>

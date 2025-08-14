@@ -3,6 +3,47 @@ import escapeHtml from '../../assets/lib/escape-html.js';
 
 import Modal from '../Modal/index';
 
+const squareMinusIcon = require('../../assets/images/icons/square-minus-icon.svg');
+const squarePlusIcon = require('../../assets/images/icons/square-plus-icon.svg');
+
+const deliveryGif = require('../../assets/images/delivery.gif');
+
+const productImages = {
+  '500ml_non_dairy_chunky_monkey.png': require('../../assets/images/products/500ml_non_dairy_chunky_monkey.png'),
+  '500ml_strawberry_cheesecake.png': require('../../assets/images/products/500ml_strawberry_cheesecake.png'),
+  '500ml_topped_salted_caramel_brownie.png': require('../../assets/images/products/500ml_topped_salted_caramel_brownie.png'),
+  'beef_massaman.png': require('../../assets/images/products/beef_massaman.png'),
+  'chicken_loempias.png': require('../../assets/images/products/chicken_loempias.png'),
+  'chicken_cashew.png': require('../../assets/images/products/chicken_cashew.png'),
+  'fried_noodles.png': require('../../assets/images/products/fried_noodles.png'),
+  'koong_hom_pha.png': require('../../assets/images/products/koong_hom_pha.png'),
+  'mini_vega_springrolls.png': require('../../assets/images/products/mini_vega_springrolls.png'),
+  'tom_kha.png': require('../../assets/images/products/tom_kha.png'),
+  'tofu_cashew.png': require('../../assets/images/products/tofu_cashew.png'),
+  'satesaus.png': require('../../assets/images/products/satesaus.png'),
+  'sate.png': require('../../assets/images/products/sate.png'),
+  'witte_rijst.png': require('../../assets/images/products/witte_rijst.png'),
+  'prik_nam_pla.png': require('../../assets/images/products/prik_nam_pla.png'),
+  'red_curry_vega.png': require('../../assets/images/products/red_curry_vega.png'),
+  'chu_chee.png': require('../../assets/images/products/chu_chee.png'),
+  'kroepoek.png': require('../../assets/images/products/kroepoek.png'),
+  'fried_rice.png': require('../../assets/images/products/fried_rice.png'),
+  'green_curry.png': require('../../assets/images/products/green_curry.png'),
+  'kai_see_ew.png': require('../../assets/images/products/kai_see_ew.png'),
+  'king_salad.png': require('../../assets/images/products/king_salad.png'),
+  'krapau_vega.png': require('../../assets/images/products/krapau_vega.png'),
+  'laab_kai_chicken_salad.png': require('../../assets/images/products/laab_kai_chicken_salad.png'),
+  'red_curry.png': require('../../assets/images/products/red_curry.png'),
+  'som_tam_papaya_salad.png': require('../../assets/images/products/som_tam_papaya_salad.png'),
+  'stir_fried_vegetables.png': require('../../assets/images/products/stir_fried_vegetables.png'),
+  'sweet_n_sour.png': require('../../assets/images/products/sweet_n_sour.png'),
+  'tom_yam.png': require('../../assets/images/products/tom_yam.png'),
+  '500ml_chocolate_fudge_brownie.png': require('../../assets/images/products/500ml_chocolate_fudge_brownie.png'),
+  '500ml_cookie_dough.png': require('../../assets/images/products/500ml_cookie_dough.png'),
+  'fish_cakes.png': require('../../assets/images/products/fish_cakes.png')
+};
+
+
 export default class Cart {
   cartItems = []; // [product: {...}, count: N]
 
@@ -60,23 +101,24 @@ export default class Cart {
   }
 
   renderProduct(product, count) {
+    let imagePath = productImages[product.image];
     return createElement(`
     <div class="cart-product" data-product-id="${
       product.id
     }">
       <div class="cart-product__img">
-        <img src="../../assets/images/products/${product.image}" alt="product">
+        <img src="${imagePath}" alt="product">
       </div>
       <div class="cart-product__info">
         <div class="cart-product__title">${escapeHtml(product.name)}</div>
         <div class="cart-product__price-wrap">
           <div class="cart-counter">
             <button type="button" class="cart-counter__button cart-counter__button_minus">
-              <img src="../../assets/images/icons/square-minus-icon.svg" alt="minus">
+              <img src="${squareMinusIcon}" alt="minus">
             </button>
             <span class="cart-counter__count">${count}</span>
             <button type="button" class="cart-counter__button cart-counter__button_plus">
-              <img src="../../assets/images/icons/square-plus-icon.svg" alt="plus">
+              <img src="${squarePlusIcon}" alt="plus">
             </button>
           </div>
           <div class="cart-product__price">€${product.price.toFixed(2)}</div>
@@ -194,7 +236,7 @@ export default class Cart {
   				<p>
     				Order successful! Your order is being cooked :) <br>
    				We’ll notify you about delivery time shortly.<br>
-    				<img src="../../assets/images/delivery.gif">
+    				<img src="${deliveryGif}">
   				</p>
 			</div>`
 		));
