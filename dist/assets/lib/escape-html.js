@@ -1,0 +1,1 @@
+export default r=>Array.from(r).map(r=>{switch(r){case"&":return"&amp;";case'"':return"&quot;";case"'":return"&#39;";case"<":return"&lt;";case">":return"&gt;";default:return r}}).join("");
