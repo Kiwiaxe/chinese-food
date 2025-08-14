@@ -1,1 +1,0 @@
-export default function(e){const t=document.createElement("div");return t.innerHTML=e,t.firstElementChild}

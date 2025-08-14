@@ -36,7 +36,7 @@
   height: 24px;
   margin-left: 12px;
   position: relative;
-  background: url(/chinese-food/9cdb6631c9047ae65b6c.svg) center no-repeat;
+  background: url(/chinese-food/assets/images/loader-icon-sm.svg) center no-repeat;
   background-size: cover;
   vertical-align: bottom;
   display: inline-block;
@@ -842,7 +842,7 @@ h2,
 }
 
 .cart-icon__inner {
-  background: url(/chinese-food/6d5b8f3f7dba7ccd46ac.svg) center no-repeat;
+  background: url(/chinese-food/assets/images/cart-icon.svg) center no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -1108,7 +1108,7 @@ h2,
   right: 24px;
   top: 50%;
   transform: translate(0, -50%);
-  background: url(/chinese-food/ea1f36a2067783275787.svg) center no-repeat;
+  background: url(/chinese-food/assets/images/angle-sm-icon.svg) center no-repeat;
   background-size: cover;
   width: 10px;
   height: 18px;
@@ -1222,7 +1222,7 @@ h2,
   left: 0;
   width: 16px;
   height: 17px;
-  background: url(/chinese-food/2e683ced3093a6755011.svg) center no-repeat;
+  background: url(/chinese-food/assets/images/pepper-icon.svg) center no-repeat;
   background-size: cover;
   display: none;
 }
@@ -1233,7 +1233,7 @@ h2,
   right: 0;
   width: 48px;
   height: 17px;
-  background: url(/chinese-food/2e683ced3093a6755011.svg) center repeat;
+  background: url(/chinese-food/assets/images/pepper-icon.svg) center repeat;
   display: none;
 }
 
@@ -1292,7 +1292,7 @@ h2,
   top: 5px;
   width: 12px;
   height: 11px;
-  background: url(/chinese-food/c2bc32621928d37ce49b.svg) center no-repeat;
+  background: url(/chinese-food/assets/images/check-icon.svg) center no-repeat;
   background-size: cover;
 }
 
