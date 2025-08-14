@@ -36,7 +36,7 @@
   height: 24px;
   margin-left: 12px;
   position: relative;
-  background: url(../../8e7f8df68c7d46e0d85f.svg) center no-repeat;
+  background: url(/8e7f8df68c7d46e0d85f.svg) center no-repeat;
   background-size: cover;
   vertical-align: bottom;
   display: inline-block;
@@ -842,7 +842,7 @@ h2,
 }
 
 .cart-icon__inner {
-  background: url(../../e80a94569b21bf847047.svg) center no-repeat;
+  background: url(/e80a94569b21bf847047.svg) center no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -1108,7 +1108,7 @@ h2,
   right: 24px;
   top: 50%;
   transform: translate(0, -50%);
-  background: url(../../df6b4c63886c8c5bb030.svg) center no-repeat;
+  background: url(/df6b4c63886c8c5bb030.svg) center no-repeat;
   background-size: cover;
   width: 10px;
   height: 18px;
@@ -1222,7 +1222,7 @@ h2,
   left: 0;
   width: 16px;
   height: 17px;
-  background: url(../../b23bb2853a6999daf1c1.svg) center no-repeat;
+  background: url(/b23bb2853a6999daf1c1.svg) center no-repeat;
   background-size: cover;
   display: none;
 }
@@ -1233,7 +1233,7 @@ h2,
   right: 0;
   width: 48px;
   height: 17px;
-  background: url(../../b23bb2853a6999daf1c1.svg) center repeat;
+  background: url(/b23bb2853a6999daf1c1.svg) center repeat;
   display: none;
 }
 
@@ -1292,7 +1292,7 @@ h2,
   top: 5px;
   width: 12px;
   height: 11px;
-  background: url(../../682104c4ca2dafac3b42.svg) center no-repeat;
+  background: url(/682104c4ca2dafac3b42.svg) center no-repeat;
   background-size: cover;
 }
 
