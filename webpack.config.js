@@ -9,7 +9,10 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'index.js'
+		filename: 'index.js',
+		publicPath: process.env.NODE_ENV === 'production'
+    ? '/chinese-food/'
+    : '/',
 	},
 	devtool: 'inline-source-map',
 	devServer: {
